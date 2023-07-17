@@ -1,0 +1,14 @@
+﻿-The Ocelot file has two sections:
+1-one is Global Configuration, which acts as an entry point of our application.
+2-and the other is Routes, which is used to define routes of our microservices.
+-UpstreamPathTemplate: is used to receive client requests and redirects them to the particular microservice.
+تُستخدم لتلقي طلبات العميل وإعادة توجيهها إلى خدمة مصغرة معينة.
+-UpstreamHttpMethod is used to define HTTP attributes, which helps to the gateway to getting the type of request.
+يستخدم لتحديد سمات HTTP ، مما يساعد البوابة في الحصول على نوع الطلب.
+-DownstreamTemplatePath: is the microservice endpoint that takes the request from UpstreamPathTemplate.
+هي نقطة نهاية الخدمة المصغرة التي تأخذ الطلب من UpstreamPathTemplate.
+
+-DownstreamScheme: defines the scheme of a request.
+
+-DownstreamHostAndPorts defines the hostname and port number of microservices that are present inside the lauchSetting.json file.
+يحدد اسم المضيف ورقم المنفذ للخدمات المصغرة الموجودة داخل ملف lauchSetting.json.
